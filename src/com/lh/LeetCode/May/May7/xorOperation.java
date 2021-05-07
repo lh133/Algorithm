@@ -9,18 +9,16 @@ package com.lh.LeetCode.May.May7;
  * 请返回 nums 中所有元素按位异或（XOR）后得到的结果。
  *
  * @Author: LH
- * @Date: 2021/5/7 9:32
+ * @Date: 2021/5/7 9:51
  */
 public class xorOperation {
 }
 
 class Solution {
     public int xorOperation(int n, int start) {
-        int[] nums = new int[n];
         int ans = 0;
-        for (int i = 0; i < n; i++) {
-            nums[i] = start + 2 * i;
-            ans ^= nums[i];
+        for (int i = 0; i < n; ++i) {
+            ans ^= (start + i * 2);
         }
         return ans;
     }
