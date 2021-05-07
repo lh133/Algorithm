@@ -12,6 +12,9 @@ package com.lh.LeetCode.May.May7;
  * @Date: 2021/5/7 9:51
  */
 public class xorOperation {
+    public static void main(String[] args) {
+        System.out.println(new Solution().xorOperation2(5, 0));//预期结果为8
+    }
 }
 
 class Solution {
