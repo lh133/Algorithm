@@ -14,7 +14,7 @@ package com.lh.LeetCode.May.May10;
 public class maxDepth {
 }
 
-class Solution5 {
+class Solution4 {
     public int maxDepth(TreeNode root) {
         if (root == null) return 0;
         else {

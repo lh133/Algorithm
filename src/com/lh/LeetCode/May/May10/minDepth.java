@@ -14,7 +14,7 @@ package com.lh.LeetCode.May.May10;
 public class minDepth {
 }
 
-class Solution4 {
+class Solution3 {
     public int minDepth(TreeNode root) {
         if (root == null) return 0;
         if (root.left == null && root.right == null) return 1;
