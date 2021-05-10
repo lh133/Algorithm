@@ -14,11 +14,14 @@ package com.lh.LeetCode.May.May9;
  * @Date: 2021/5/9 22:34
  */
 public class minDays {
-
+    public static void main(String[] args) {
+        int[] bloomDay = {1, 10, 3, 10, 2};
+        System.out.println(new Solution().minDays(bloomDay, 3, 1));
+    }
 }
 
 class Solution {
-    int _m, n, _k;
+    private int _m, n, _k;
 
     public int minDays(int[] bloomDay, int m, int k) {
         n = bloomDay.length;
