@@ -26,11 +26,13 @@ class Solution {
     // 利用异或运算的性质
     // 异或运算满足交换律和结合律
     // 任意整数和自身做异或运算的结果都等于0
-    // 任意整数和 00 做异或运算的结果都等于其自身
+    // 任意整数和 0 做异或运算的结果都等于其自身
     public int[] decode(int[] encoded, int first) {
         int n = encoded.length + 1;
         int[] arr = new int[n];
         arr[0] = first;
+        // encoded[i-1] = arr[i-1] XOR arr[i]，将等式两边同时「异或」上 arr[i-1]
+        // 可得encoded[i-1] XOR arr[i-1] = arr[i]
         for (int i = 1; i < n; i++) {
             arr[i] = arr[i - 1] ^ encoded[i - 1];
         }
