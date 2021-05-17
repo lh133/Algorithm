@@ -1,0 +1,26 @@
+package com.lh.LeetCode.May.May17;
+
+/**
+ * Definition for a binary tree node.
+ *
+ * @Author: LH
+ * @Date: 2021/5/17 11:18
+ */
+public class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode() {
+    }
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
