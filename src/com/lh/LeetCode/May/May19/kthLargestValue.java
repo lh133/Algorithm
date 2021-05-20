@@ -16,10 +16,13 @@ import java.util.PriorityQueue;
  * @Date: 2021/5/19 18:11
  */
 public class kthLargestValue {
+<<<<<<< HEAD
     public static void main(String[] args) {
         int[][] matrix = {{5,2},{1,6}};
         System.out.println(new Solution().kthLargestValue(matrix,1));
     }
+=======
+>>>>>>> github/master
 }
 
 class Solution {
@@ -28,7 +31,10 @@ class Solution {
         int n = matrix[0].length;
         int[][] pre = new int[m + 1][n + 1];
         List<Integer> ans = new ArrayList<>();
+<<<<<<< HEAD
         // 获取二维前缀和
+=======
+>>>>>>> github/master
         for (int i = 1; i <= m; i++) {
             for (int j = 1; j <= n; j++) {
                 pre[i][j] = pre[i - 1][j] ^ pre[i][j - 1] ^ pre[i - 1][j - 1] ^ matrix[i - 1][j - 1];
@@ -36,7 +42,10 @@ class Solution {
                 if (ans.size() > k) break;
             }
         }
+<<<<<<< HEAD
         // 排序并获取结果
+=======
+>>>>>>> github/master
         ans.sort((o1, o2) -> o2 - o1);
         return ans.get(k - 1);
     }
