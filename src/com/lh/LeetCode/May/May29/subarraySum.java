@@ -32,8 +32,10 @@ class Solution {
         for (int num :
                 nums) {
             preSum += num;
+            // 找到前缀和为 preSum - k
             if (preSumMap.containsKey(preSum - k))
                 count += preSumMap.get(preSum - k);
+            // 更新map
             preSumMap.put(preSum, preSumMap.getOrDefault(preSum, 0) + 1);
         }
         return count;
