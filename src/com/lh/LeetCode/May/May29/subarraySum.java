@@ -18,7 +18,8 @@ import java.util.Map;
  */
 public class subarraySum {
     public static void main(String[] args) {
-
+        int[] nums = {1,1,1};
+        System.out.println(new Solution().subarraySum(nums,2));
     }
 }
 
