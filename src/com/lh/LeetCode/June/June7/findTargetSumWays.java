@@ -23,6 +23,10 @@ import java.util.Map;
  * @Date: 2021/6/7 11:00
  */
 public class findTargetSumWays {
+    public static void main(String[] args) {
+        int[] nums = {1,1,1,1,1};
+        System.out.println(new Solution().findTargetSumWays2(nums,3));
+    }
 }
 
 class Solution {
@@ -88,7 +92,7 @@ class Solution {
         if (target > s || (s - target) % 2 != 0) return 0;
         int m = (s - target) / 2;
         int[][] dp = new int[n + 1][m + 1];
-        dp[0][0] = 0;
+        dp[0][0] = 1;
         for (int i = 1; i <= n; i++) {
             int x = nums[i - 1];
             for (int j = 0; j <= m; j++) {
