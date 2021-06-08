@@ -42,7 +42,7 @@ class Solution3 {
      * @param ans   结果
      * @param start 开始回溯位置
      */
-    void backtrack(int len, List<Integer> res, List<List<Integer>> ans, int start) {
+    private void backtrack(int len, List<Integer> res, List<List<Integer>> ans, int start) {
         if (start == len) ans.add(new LinkedList<>(res));// 获取拷贝
         for (int i = start; i < len; i++) {
             // 动态维护数组，交换两个数
