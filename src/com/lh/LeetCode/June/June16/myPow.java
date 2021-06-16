@@ -19,8 +19,7 @@ public class myPow {
 
 class Solution3 {
     public double myPow(double x, int n) {
-        long N = n;
-        return N >= 0 ? quickMul(x, N) : 1.0 / quickMul(x, -N);
+        return (long) n >= 0 ? quickMul(x, (long) n) : 1.0 / quickMul(x, -(long) n);
     }
 
     // 快速幂+递归
