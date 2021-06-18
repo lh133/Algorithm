@@ -20,6 +20,7 @@ class Solution5 {
         int n = nums.length;
         int rightMost = 0;
         for (int i = 0; i < n; ++i) {
+            // 在能跳跃的范围之内找到最远能跳的距离，如果
             if (i <= rightMost) {
                 rightMost = Math.max(rightMost, i + nums[i]);
                 if (rightMost >= n - 1) return true;
