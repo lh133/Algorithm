@@ -33,7 +33,7 @@ class Solution {
             arr[3] = '5';
         }
         if (arr[4] == '?') {
-            arr[3] = '9';
+            arr[4] = '9';
         }
         return new String(arr);
     }
